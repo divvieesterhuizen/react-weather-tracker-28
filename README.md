@@ -1,4 +1,4 @@
-# React Todo App
+# React Weather Tracking App
 
 React based Weather Tracking App, pulling data from 'openweathermap.org' and plots them on a Google map.
 
