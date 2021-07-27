@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
 import MarkerPopupBox from './MarkerPopupBox';
@@ -8,17 +8,6 @@ const Map = ({ weatherData, center, zoom }) => {
 
   const GOOGLE_MAP_KEY =
     process.env.GOOGLE_MAP_KEY || process.env.REACT_APP_GOOGLE_MAP_KEY;
-
-  useEffect(() => {
-    // set initial city popup message
-    setTimeout(() => {
-      setMarkerPopupText(weatherData[0]);
-      setTimeout(() => {
-        setMarkerPopupText(null);
-      }, 5000);
-    }, 1500);
-    // eslint-disable-next-line
-  }, []);
 
   return (
     <div className='mapContainer'>
