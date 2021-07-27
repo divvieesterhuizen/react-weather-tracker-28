@@ -22,7 +22,7 @@ const MarkerPopupBox = ({ item, onClick }) => {
         Weather: {item.weather[0].main}, {item.weather[0].description}
       </p>
       <img
-        src={`http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
+        src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`}
         alt='weather icon'
       />
     </div>
